@@ -258,6 +258,17 @@ input, select, textarea {
 
 	}
 
+	@media screen and (max-width: 736px) {
+    .panel.banner.right .content {
+        padding-right: 15px;
+    }
+    
+    h1.major {
+        word-wrap: break-word;
+        hyphens: auto;
+    }
+}
+
 	@media screen and (max-width: 480px) {
 
 		html, body {
@@ -1377,7 +1388,7 @@ input, select, textarea {
 				line-height: 2.25rem;
 				border-radius: 2.25rem;
 				background-color: white;
-				color: #2e2b37;
+				color: #fff;
 				cursor: default;
 				font-size: 1.125rem;
 				margin-right: 1rem;
@@ -2236,8 +2247,8 @@ input, select, textarea {
 			}
 
 			.panel > *.color3-alt {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97,  147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
-				background-size: 128px 128px, auto;
+				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
+				background-size: 128px  128px, auto;
 				background-color: #fedea6;
 			}
 
@@ -2717,9 +2728,9 @@ input, select, textarea {
 		}
 
 		.panel.color1 {
-			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+			background-image: url("../../images/overlay.png"), linear-gradient(45deg, #ff7433 20%, #ff9966 60%, #ff7433);
 			background-size: 128px 128px, auto;
-			background-color: #726193;
+			background-color: #ff7433;
 		}
 
 		.panel.color2 {
@@ -2735,9 +2746,13 @@ input, select, textarea {
 		}
 
 		.panel.color4 {
-			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+			background-image: url("../../images/overlay.png"), linear-gradient(45deg, #ff7433 20%, #ff9966 60%, #ffcc99);
 			background-size: 128px 128px, auto;
-			background-color: #353865;
+			background-color: #ff7433;
+		}
+
+		.panel.color4 h2, .panel.color4 p, .panel.color4 .contact-info span {
+			color: rgba(255, 255, 255, 0.9);
 		}
 
 		.panel.color1-alt {
@@ -3687,3 +3702,19 @@ input, select, textarea {
 			}
 
 	}
+
+/* Centraliza a div .copyright com posição absoluta */
+.copyright {
+    position: absolute;
+    left: 50%;
+    bottom: 24px;
+    transform: translateX(-50%);
+    width: max-content;
+    background: rgba(24,24,24,0.85);
+    color: #fff;
+    padding: 0.5em 1.5em;
+    border-radius: 2em;
+    font-size: 1rem;
+    z-index: 1000;
+    text-align: center;
+}
