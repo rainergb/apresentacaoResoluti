@@ -1,5 +1,5 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300i,400i");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300i");
 
 /*
 	Ethereal by HTML5 UP
@@ -215,7 +215,7 @@ input, select, textarea {
 			height: 100%;
 			z-index: -1;
 			background-attachment: fixed;
-			background-color: #e1e6e1;
+			background-color: #525252;
 			background-image: url("../../images/overlay.png"), url("../../images/bg.jpg");
 			background-repeat: repeat, repeat-x;
 			background-size: 128px 128px, cover;
@@ -878,7 +878,7 @@ input, select, textarea {
 	}
 
 		.image.filtered:after {
-			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+			background-image: url("../../images/overlay.png"), linear-gradient(45deg, #33333380 25%, #ff743380 50%, #ff8c5640);
 			background-size: 128px 128px, auto;
 			pointer-events: none;
 			content: '';
@@ -892,7 +892,7 @@ input, select, textarea {
 		}
 
 		.image.filtered.tinted:after {
-			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25)), linear-gradient(0deg, rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.125));
+			background-image: url("../../images/overlay.png"), linear-gradient(45deg, #33333390 25%, #ff8c5690), linear-gradient(0deg, #00000020, #00000020);
 			background-size: 128px 128px, auto, auto;
 		}
 
@@ -1398,7 +1398,7 @@ input, select, textarea {
 		}
 
 		ul.contact-icons.color2 > li:before {
-			color: #e37b7c;
+			color: #ff7433;
 		}
 
 		ul.contact-icons.color3 > li:before {
@@ -2195,7 +2195,7 @@ input, select, textarea {
 		}
 
 			.panel > *.color0 {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
+				background-image: url("../../images/overlay.png"), linear-gradient(45deg, #d6622d 20%, #e86b30 40%, #ff7433);
 				background-size: 128px 128px, auto;
 			}
 
@@ -2206,9 +2206,9 @@ input, select, textarea {
 			}
 
 			.panel > *.color2 {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+				background-image: url("../../images/overlay.png"), linear-gradient(45deg, #e86b30 40%, #ff7433);
 				background-size: 128px 128px, auto;
-				background-color: #e37b7c;
+				background-color: #ff7433;
 			}
 
 			.panel > *.color3 {
@@ -2236,7 +2236,7 @@ input, select, textarea {
 			}
 
 			.panel > *.color3-alt {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
+				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97,  147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
 				background-size: 128px 128px, auto;
 				background-color: #fedea6;
 			}
@@ -2837,45 +2837,45 @@ input, select, textarea {
 						padding-left: 1.75rem;
 					}
 
-			.panel > .inner {
-				padding: 2.8875rem 1.75rem 1.3875rem 1.75rem ;
+		.panel > .inner {
+			padding: 2.8875rem 1.75rem 1.3875rem 1.75rem ;
+		}
+
+			.panel > .inner.columns {
+				-moz-flex-direction: column;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
 			}
 
-				.panel > .inner.columns {
-					-moz-flex-direction: column;
-					-webkit-flex-direction: column;
-					-ms-flex-direction: column;
-					flex-direction: column;
+				.panel > .inner.columns > * {
+					margin-left: 0;
+					margin-top: 0;
 				}
 
-					.panel > .inner.columns > * {
+				.panel > .inner.columns > :first-child {
+					margin-top: 0;
+				}
+
+				.panel > .inner.columns.divided > * {
+					margin-left: 0;
+					margin-top: 3.5rem;
+				}
+
+					.panel > .inner.columns.divided > *:before {
+						content: '';
+						position: absolute;
+						top: auto;
+						left: 1.75rem;
+						width: calc(100% - 3.5rem);
+						height: 2px;
 						margin-left: 0;
-						margin-top: 0;
+						margin-top: -1.75rem;
 					}
 
-					.panel > .inner.columns > :first-child {
-						margin-top: 0;
-					}
-
-					.panel > .inner.columns.divided > * {
-						margin-left: 0;
-						margin-top: 3.5rem;
-					}
-
-						.panel > .inner.columns.divided > *:before {
-							content: '';
-							position: absolute;
-							top: auto;
-							left: 1.75rem;
-							width: calc(100% - 3.5rem);
-							height: 2px;
-							margin-left: 0;
-							margin-top: -1.75rem;
-						}
-
-					.panel > .inner.columns.divided > :first-child {
-						margin-top: 0;
-					}
+				.panel > .inner.columns.divided > :first-child {
+					margin-top: 0;
+				}
 
 			.panel .span-0-25 {
 				width: 100%;

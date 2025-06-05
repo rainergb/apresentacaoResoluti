@@ -22,7 +22,7 @@
 			}
 			
 			.color0 {
-				background: linear-gradient(45deg, var(--resoluti-dark), var(--resoluti-orange));
+				background: transparent;
 			}
 			
 			.quote {
@@ -60,8 +60,15 @@
 			}
 			
 			.equipment-table {
-				width: 100%;
-				border-collapse: collapse;
+				width: auto;
+				max-width: 100%;
+				margin-left: auto;
+				margin-right: auto;
+				font-size: 0.95rem;
+			}
+			
+			.equipment-table th, .equipment-table td {
+				white-space: nowrap;
 			}
 			
 			.equipment-table th {
@@ -97,9 +104,23 @@
 				width: 24px;
 				text-align: center;
 			}
+			
+			.panel.banner.right {
+				background: url('images/image-1.png') center center/cover no-repeat;
+			}
+			
+			body {
+				background: #181818 !important;
+			}
+			#wrapper {
+				background: transparent !important;
+			}
+			.panel.spotlight.medium.right .content p {
+    font-weight: 400;
+}
 		</style>
 	</head>
-	<body class="is-preload">
+	<body class="is-preload"></body>
 
 		<!-- Page Wrapper -->
 		<div id="page-wrapper">
@@ -120,7 +141,7 @@
 						</ul>
 					</div>
 					<div class="image" data-position="center">
-						<img src="images/image-2.png" alt="Rede de computadores" style="width:225px; padding-right: 25px;" />
+						<img src="images/image-2.png" alt="Rede de computadores" style="width:275px;" />
 					</div>
 				</section>
 
@@ -169,12 +190,13 @@
 				</section>
 
 				<!-- Panel -->
-				<section class="panel">
+				<section class="panel" style="background-color: #333;">
 					<div class="intro color2">
 						<h2 class="major">Visão Geral</h2>
-						<p>Abordaremos a troca, inclusão e configuração de equipamentos de rede por todo complexo da universidade, visando disponibilizar internet através da rede WIFI para todos os alunos e professores de maneira controlável e gerenciável.</p>
-						<p>Os pontos de rede de todos os prédios serão interligados por fibra ótica, tornando o acesso a rede muito mais estável e rápida. Implementando segurança e manipulação de equipamentos na rede, adicionando proteção a rede elétrica com o uso de nobreaks em todos os pontos que são agregados os equipamentos de rede.</p>
+						<p>Serão abordadas a troca, inclusão e configuração de equipamentos de rede em todo o complexo universitário, visando fornecer internet via WIFI a alunos e professores de forma controlável e gerenciável.</p>
+						<p>Os pontos de rede de todos os prédios serão interligados por fibra ótica, tornando o acesso mais estável e rápido. Será implementada segurança e controle dos equipamentos, com proteção elétrica por nobreaks em todos os pontos agregadores.</p>
 					</div>
+
 					<div class="gallery">
 						<a href="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="image filtered span-3" data-position="bottom"><img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Cabeamento de rede" /></a>
 						<a href="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="image filtered span-1-5" data-position="center"><img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Servidores" /></a>
@@ -182,15 +204,15 @@
 					</div>
 				</section>
 
-				<!-- Panel -->
-				<section class="panel color4-alt">
+				<!-- Panel - First Section of Equipment -->
+				<section class="panel" style="background-color: #333;">
 					<div class="intro color4">
 						<h2 class="major">Equipamentos Propostos</h2>
 						<p>Nossa proposta inclui equipamentos de alta qualidade e desempenho, com previsão de vida útil de 5 a 10 anos e, dependendo do modelo, sua gestão pode ser feita remotamente.</p>
 					</div>
 					<div class="inner columns divided">
 						<div class="span-4-5">
-							<table class="equipment-table">
+							<table class="equipment-table" style="width: 100%;">
 								<thead>
 									<tr>
 										<th>Equipamentos</th>
@@ -198,66 +220,39 @@
 									</tr>
 								</thead>
 								<tbody>
+									<tr><td>Switchs PRO 24 portas com 2 portas SFP+ de 10GB UBIQUITI</td><td>20</td></tr>
+									<tr><td>Switchs PRO 48 portas com 4 portas SFP+ de 10GB UBIQUITI</td><td>10</td></tr>
+									<tr><td>Switch gerenciável de 8 portas SFP+ 10GB UBIQUITI</td><td>1</td></tr>
+									<tr><td>AP Unifi AP-PRO INTERNO UBIQUITI</td><td>55</td></tr>
+									<tr><td>AP Unifi AP-PRO EXTERNO UBIQUITI</td><td>10</td></tr>
+									<tr><td>Gbics 10GB</td><td>6</td></tr>
+									<tr><td>Conversor de mídia</td><td>6</td></tr>
+									<tr><td>NoBreaks SMS de 1.2 KVA</td><td>20</td></tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+
+				<!-- Panel - Second Section of Equipment -->
+				<section class="panel" style="background-color: #333;">
+					<div class="inner" style="padding-top: 0;">
+						<div class="span-4-5">
+							<table class="equipment-table" style="width: 100%;">
+								<thead>
 									<tr>
-										<td>Switchs PRO 24 portas com 2 portas SFP+ de 10GB UBIQUITI</td>
-										<td>20</td>
+										<th>Equipamentos</th>
+										<th>Quantidade</th>
 									</tr>
-									<tr>
-										<td>Switchs PRO 48 portas com 4 portas SFP+ de 10GB UBIQUITI</td>
-										<td>10</td>
-									</tr>
-									<tr>
-										<td>Switch gerenciável de 8 portas SFP+ 10GB UBIQUITI</td>
-										<td>1</td>
-									</tr>
-									<tr>
-										<td>AP Unifi AP-PRO INTERNO UBIQUITI</td>
-										<td>55</td>
-									</tr>
-									<tr>
-										<td>AP Unifi AP-PRO EXTERNO UBIQUITI</td>
-										<td>10</td>
-									</tr>
-									<tr>
-										<td>Gbics 10GB</td>
-										<td>6</td>
-									</tr>
-									<tr>
-										<td>Conversor de mídia</td>
-										<td>6</td>
-									</tr>
-									<tr>
-										<td>NoBreaks SMS de 1.2 KVA</td>
-										<td>20</td>
-									</tr>
-									<tr>
-										<td>NoBreaks SMS de 10 KVA</td>
-										<td>1</td>
-									</tr>
-									<tr>
-										<td>Baterias Estacionárias Moura de 150A</td>
-										<td>4</td>
-									</tr>
-									<tr>
-										<td>Rack de parede preto de 6Us</td>
-										<td>7</td>
-									</tr>
-									<tr>
-										<td>Cameras FullHD Interna UBIQUITI</td>
-										<td>16</td>
-									</tr>
-									<tr>
-										<td>Cameras FullHD Externa UBIQUITI</td>
-										<td>22</td>
-									</tr>
-									<tr>
-										<td>DVR IP para 50 cameras UBIQUITI</td>
-										<td>1</td>
-									</tr>
-									<tr>
-										<td>Fusão de cabos de Fibra Optica + DGO + patchcord Fibra Multimodo + cabo de Fibra Optica Multi-modo</td>
-										<td>1750 mts</td>
-									</tr>
+								</thead>
+								<tbody>
+									<tr><td>NoBreaks SMS de 10 KVA</td><td>1</td></tr>
+									<tr><td>Baterias Estacionárias Moura de 150A</td><td>4</td></tr>
+									<tr><td>Rack de parede preto de 6Us</td><td>7</td></tr>
+									<tr><td>Cameras FullHD Interna UBIQUITI</td><td>16</td></tr>
+									<tr><td>Cameras FullHD Externa UBIQUITI</td><td>22</td></tr>
+									<tr><td>DVR IP para 50 cameras UBIQUITI</td><td>1</td></tr>
+									<tr><td>Fusão de cabos de Fibra Optica + DGO + patchcord Fibra Multimodo + cabo de Fibra Optica Multi-modo</td><td>1750 mts</td></tr>
 								</tbody>
 							</table>
 						</div>
